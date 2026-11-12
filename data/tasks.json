@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Set up staging database",
+    "status": "done",
+    "owner": "Priya"
+  },
+  {
+    "id": 2,
+    "title": "Write onboarding guide",
+    "status": "doing",
+    "owner": "Marco"
+  },
+  {
+    "id": 3,
+    "title": "Fix login timeout on mobile",
+    "status": "todo",
+    "owner": "Priya"
+  },
+  {
+    "id": 4,
+    "title": "Plan Q3 customer interviews",
+    "status": "todo",
+    "owner": "Sam"
+  },
+  {
+    "id": 5,
+    "title": "Review accessibility audit",
+    "status": "doing",
+    "owner": "Sam"
+  },
+  {
+    "id": 6,
+    "title": "Update pricing page copy",
+    "status": "todo",
+    "owner": "Marco"
+  },
+  {
+    "id": 7,
+    "title": "Archive old project files",
+    "status": "done",
+    "owner": "Elena"
+  }
+]

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Board</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Team Board</h1>
+    <a href="/api/tasks.csv" id="export">Export CSV</a>
+  </header>
+
+  <section>
+    <h2>New task</h2>
+    <form id="new-task">
+      <label for="title">Title</label>
+      <input id="title" name="title" required maxlength="120">
+      <label for="owner">Owner</label>
+      <input id="owner" name="owner" required placeholder="Who is responsible?">
+      <button type="submit">Add task</button>
+    </form>
+    <p id="form-error" class="error" hidden></p>
+  </section>
+
+  <section>
+    <h2>Tasks</h2>
+    <div class="controls">
+      <label for="filter-status">Status</label>
+      <select id="filter-status">
+        <option value="">All</option>
+        <option value="todo">To do</option>
+        <option value="doing">Doing</option>
+        <option value="done">Done</option>
+      </select>
+      <label for="filter-owner">Owner</label>
+      <input id="filter-owner" placeholder="Any">
+      <label for="sort">Sort by</label>
+      <select id="sort">
+        <option value="id">Created</option>
+        <option value="title">Title</option>
+        <option value="status">Status</option>
+        <option value="owner">Owner</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Title</th><th>Status</th><th>Owner</th><th></th></tr>
+      </thead>
+      <tbody id="tasks"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Workload</h2>
+    <ul id="workload"></ul>
+  </section>
+
+  <script src="/app.js"></script>
+</body>
+</html>
